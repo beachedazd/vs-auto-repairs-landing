@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Car repairs, brakes, transmission & log book servicing in Carrum Downs. Rated 4.8 from 47 Google reviews. Call (03) 9706 6007 or book on WhatsApp.">
-  <title>VS Auto Repairs — Mechanic Carrum Downs | Book on WhatsApp</title>
+  <meta name="description" content="Roadworthy certificates (RWC), brakes, transmission & log book servicing in Carrum Downs. Rated 4.8 from 47 Google reviews. Call (03) 9706 6007 or book on WhatsApp.">
+  <title>VS Auto Repairs — Roadworthy Certificates & Mechanic Carrum Downs</title>
 
   <!-- GOOGLE ADS / GTAG SETUP
          1. Replace AW-XXXXXXXXXX with your Google Ads conversion ID (found in Google Ads Tools → Conversions)
@@ -165,8 +165,11 @@
     /* Hero */
     .hero {
       background-color: var(--navy);
+      background-image: linear-gradient(rgba(18, 49, 79, 0.93), rgba(18, 49, 79, 0.82)), url('assets/shopfront.jpg');
+      background-size: cover;
+      background-position: center 40%;
       color: white;
-      padding: 64px 20px;
+      padding: 80px 20px 72px;
       text-align: center;
     }
 
@@ -269,6 +272,93 @@
       height: 20px;
       display: inline-block;
       flex-shrink: 0;
+    }
+
+    /* RWC feature */
+    .rwc {
+      background-color: var(--card);
+      border-top: 4px solid var(--yellow);
+      padding: 60px 20px;
+    }
+
+    .rwc-container {
+      max-width: 960px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    @media (min-width: 720px) {
+      .rwc-container {
+        grid-template-columns: 3fr 2fr;
+      }
+    }
+
+    .rwc-eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+
+    .rwc h2 {
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .rwc-text p {
+      margin-bottom: 24px;
+      max-width: 480px;
+    }
+
+    .rwc-text .btn-wa {
+      flex: none;
+      display: inline-flex;
+    }
+
+    .rwc-image img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      object-position: center 40%;
+      border-radius: 12px;
+      display: block;
+    }
+
+    /* Gallery */
+    .gallery {
+      padding: 0 20px 60px;
+    }
+
+    .gallery-grid {
+      max-width: 960px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: 720px) {
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .gallery-grid img:last-child {
+      object-position: center 70%;
     }
 
     /* Services */
@@ -622,14 +712,14 @@
 <body>
   <header class="hero">
     <div class="container">
-      <div class="eyebrow">Carrum Downs · Car Repair Shop</div>
+      <div class="eyebrow">Carrum Downs · Mechanic & Roadworthy Tester</div>
       <h1>VS Auto Repairs</h1>
       <div class="stars">
         <span class="star-glyph" aria-hidden="true">★★★★★</span>
         <span aria-hidden="true">4.8 · 47 Google reviews</span>
         <span class="sr-only">4.8 out of 5 stars from 47 Google reviews</span>
       </div>
-      <p class="hero-subhead">Brakes, transmission, engine and log book servicing — straight answers and quality workmanship.</p>
+      <p class="hero-subhead">Roadworthy certificates, brakes, transmission, engine and log book servicing — straight answers from fully qualified technicians. Est 2008.</p>
       <div class="buttons">
         <a id="cta-call-hero" class="btn btn-call" href="tel:+61397066007">
           <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -637,7 +727,7 @@
           </svg>
           Call (03) 9706 6007
         </a>
-        <a id="cta-wa-hero" class="btn btn-wa" href="https://wa.me/61397066007?text=Hi%20VS%20Auto%2C%20I%27d%20like%20to%20book%20my%20car%20in" target="_blank" rel="noopener">
+        <a id="cta-wa-hero" class="btn btn-wa" href="https://wa.me/61411217866?text=Hi%20VS%20Auto%2C%20I%27d%20like%20to%20book%20my%20car%20in" target="_blank" rel="noopener">
           <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
           </svg>
@@ -649,35 +739,59 @@
   </header>
 
   <main>
+    <section class="rwc">
+      <div class="rwc-container">
+        <div class="rwc-text">
+          <div class="rwc-eyebrow">Buying or selling a car?</div>
+          <h2>Roadworthy Certificates</h2>
+          <p>We inspect and issue RWCs for cars, 4WDs and light trucks right here in Carrum Downs. Message us on WhatsApp with your rego and we'll come back with a time.</p>
+          <a id="cta-wa-rwc" class="btn btn-wa" href="https://wa.me/61411217866?text=Hi%20VS%20Auto%2C%20I%20need%20a%20roadworthy%20certificate" target="_blank" rel="noopener">
+            <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Book an RWC on WhatsApp
+          </a>
+        </div>
+        <div class="rwc-image">
+          <img src="assets/truck.jpg" alt="Truck with cab tilted forward being serviced inside the VS Auto Repairs workshop" loading="lazy">
+        </div>
+      </div>
+    </section>
+
     <section class="services">
       <div class="services-container">
         <h2>What we fix</h2>
         <div class="services-grid">
           <div class="service-card">
-            <h3>Brakes</h3>
-            <p>Pads, discs, and bleeding. Safety first, always.</p>
+            <h3>Brakes &amp; Suspension</h3>
+            <p>Pads, discs, shocks and steering.</p>
           </div>
           <div class="service-card">
-            <h3>Transmission</h3>
-            <p>Gearbox repairs and fluid service. Smooth shifts.</p>
+            <h3>Transmission &amp; Clutch</h3>
+            <p>Auto transmission and clutch repairs.</p>
           </div>
           <div class="service-card">
-            <h3>Engine Repair</h3>
-            <p>Diagnostics and major work. We get it running.</p>
-          </div>
-          <div class="service-card">
-            <h3>General Repairs</h3>
-            <p>Everything from belts to lights to suspension.</p>
-          </div>
-          <div class="service-card">
-            <h3>Engine Tuning</h3>
-            <p>ECU mapping and performance. Tested and tuned.</p>
+            <h3>Engine &amp; Diagnostics</h3>
+            <p>Auto diagnostics, tuning and major work.</p>
           </div>
           <div class="service-card">
             <h3>Log Book Servicing</h3>
-            <p>Scheduled maintenance by the book. Warranty safe.</p>
+            <p>By the book. New car warranty safe.</p>
+          </div>
+          <div class="service-card">
+            <h3>4WD &amp; Light Trucks</h3>
+            <p>All mechanical repairs, big and small.</p>
+          </div>
+          <div class="service-card">
+            <h3>Tyres &amp; Batteries</h3>
+            <p>Supplied, fitted and tested.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="gallery" aria-label="Inside the workshop">
+      <div class="gallery-grid">
+        <img src="assets/workshop.jpg" alt="Inside the VS Auto Repairs workshop with a car ready for service" loading="lazy">
+        <img src="assets/shopfront.jpg" alt="VS Auto Repairs shopfront on Colemans Road, Carrum Downs" loading="lazy">
       </div>
     </section>
 
@@ -737,7 +851,7 @@
     <section class="final-cta">
       <div class="container">
         <h2>Book your car in today</h2>
-        <p class="final-cta-text">Message us on WhatsApp with your rego and what's wrong — we'll come back with a time and a straight answer.</p>
+        <p class="final-cta-text">Roadworthy, service or repair — message us on WhatsApp with your rego and what you need, and we'll come back with a time and a straight answer.</p>
         <div class="buttons">
           <a id="cta-call-footer" class="btn btn-call" href="tel:+61397066007">
             <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -745,7 +859,7 @@
             </svg>
             Call (03) 9706 6007
           </a>
-          <a id="cta-wa-footer" class="btn btn-wa" href="https://wa.me/61397066007?text=Hi%20VS%20Auto%2C%20I%27d%20like%20to%20book%20my%20car%20in" target="_blank" rel="noopener">
+          <a id="cta-wa-footer" class="btn btn-wa" href="https://wa.me/61411217866?text=Hi%20VS%20Auto%2C%20I%27d%20like%20to%20book%20my%20car%20in" target="_blank" rel="noopener">
             <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
             </svg>
@@ -767,7 +881,7 @@
       </svg>
       Call
     </a>
-    <a id="cta-wa-sticky" class="sticky-btn sticky-wa" href="https://wa.me/61397066007?text=Hi%20VS%20Auto%2C%20I%27d%20like%20to%20book%20my%20car%20in" target="_blank" rel="noopener">
+    <a id="cta-wa-sticky" class="sticky-btn sticky-wa" href="https://wa.me/61411217866?text=Hi%20VS%20Auto%2C%20I%27d%20like%20to%20book%20my%20car%20in" target="_blank" rel="noopener">
       <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
       </svg>

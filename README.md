@@ -26,11 +26,16 @@ The gtag code ships with placeholders you must replace in `index.html`:
 Consent Mode v2 defaults are set to `granted` for Australian-only traffic. If you ever target
 EEA/UK, switch the defaults to `denied` and add a consent banner (see the comment in the head).
 
-## WhatsApp number
+## Phone numbers
 
-CTAs currently point at `wa.me/61397066007` (the shop landline in international format —
-works if the shop runs WhatsApp Business on that number). If bookings should go to a mobile
-instead, search-and-replace `61397066007` with the mobile in `61XXXXXXXXX` format.
+- **Call buttons** dial the landline (03) 9706 6007 — matches the Google listing.
+- **WhatsApp buttons** point at `wa.me/61411217866` — the mobile 0411 217 866 advertised on
+  the shop signage. To change it, search-and-replace `61411217866` (format `61XXXXXXXXX`).
+
+## Images
+
+Photos in `assets/` were pulled from the shop's public Facebook page (shopfront, workshop,
+truck service) and recompressed for the web.
 
 ## Deploy
 

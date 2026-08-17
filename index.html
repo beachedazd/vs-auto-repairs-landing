@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Car repairs, brakes, transmission & log book servicing in Carrum Downs. Rated 4.8 from 47 Google reviews. Call (03) 9706 6007 or book on WhatsApp.">
+  <title>VS Auto Repairs — Mechanic Carrum Downs | Book on WhatsApp</title>
+
+  <!-- GOOGLE ADS / GTAG SETUP
+         1. Replace AW-XXXXXXXXXX with your Google Ads conversion ID (found in Google Ads Tools → Conversions)
+         2. Replace CALL_LABEL_HERE with the conversion label from your "Phone call click" conversion action
+         3. Replace WA_LABEL_HERE with the conversion label from your "WhatsApp click" conversion action
+         4. Uncomment the GA4 line below if you've set up a GA4 property and want analytics tracking
+    -->
+
+    <!-- Consent Mode v2: Defaults for Australian traffic. Serving EEA/UK traffic? Switch these to 'denied' and add a consent banner (Consent Mode v2). -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', {
+            'ad_storage': 'granted',
+            'ad_user_data': 'granted',
+            'ad_personalization': 'granted',
+            'analytics_storage': 'granted'
+        });
+    </script>
+
+    <!-- Google Ads tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-XXXXXXXXXX');
+        // Uncomment after creating a GA4 property:
+        // gtag('config', 'G-XXXXXXXXXX');
+
+        // Optional: Enable phone number replacement for Google "website call conversions"
+        // Replaces the phone number shown for your ads with the configured number when clicked
+        // gtag('config', 'AW-XXXXXXXXXX/CALL_LABEL_HERE', { 'phone_conversion_number': '(03) 9706 6007' });
+    </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "VS Auto Repairs",
+    "telephone": "+61397066007",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2/114 Colemans Rd",
+      "addressLocality": "Carrum Downs",
+      "addressRegion": "VIC",
+      "postalCode": "3201",
+      "addressCountry": "AU"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "closes": "17:00"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #F6F8FA;
+      --ink: #1C2126;
+      --navy: #12314F;
+      --blue: #2B6CB8;
+      --yellow: #F5B301;
+      --wa: #25D366;
+      --wa-dark: #1DA851;
+      --card: #FFFFFF;
+      --line: #E2E8F0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--ink);
+      background-color: var(--bg);
+      padding-bottom: 72px;
+    }
+
+    @media (min-width: 720px) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    h1, h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+    }
+
+    h1 {
+      font-size: 48px;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    .eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      color: var(--yellow);
+      margin-bottom: 16px;
+    }
+
+    .stars {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .star-glyph {
+      color: var(--yellow);
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Hero */
+    .hero {
+      background-color: var(--navy);
+      color: white;
+      padding: 64px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      color: white;
+    }
+
+    .hero-subhead {
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 32px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 56px;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .btn {
+        transition: none;
+      }
+    }
+
+    .btn:focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 2px;
+    }
+
+    .btn-call {
+      background-color: white;
+      color: var(--navy);
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .btn-wa {
+      background-color: var(--wa);
+      color: white;
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .btn-wa:hover {
+      background-color: var(--wa-dark);
+    }
+
+    .btn-call:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 480px) {
+      .buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+        min-width: auto;
+      }
+    }
+
+    .hero-bottom-line {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .phone-icon {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    .wa-icon {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    /* Services */
+    .services {
+      padding: 60px 20px;
+      background-color: var(--bg);
+    }
+
+    .services-container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .services h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--navy);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    @media (min-width: 720px) {
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .service-card {
+      background-color: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .service-card h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--ink);
+    }
+
+    /* Trust Strip */
+    .trust {
+      padding: 60px 20px;
+      background-color: var(--bg);
+    }
+
+    .trust-container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .trust h2 {
+      text-align: center;
+      color: var(--navy);
+      margin-bottom: 40px;
+    }
+
+    .trust-card {
+      background-color: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 40px;
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 600px) {
+      .trust-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    .histogram {
+      flex: 1;
+      width: 100%;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .histogram-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .histogram-label {
+      width: 16px;
+      text-align: center;
+      font-weight: 600;
+      color: var(--navy);
+      flex-shrink: 0;
+    }
+
+    .histogram-track {
+      flex: 1;
+      height: 10px;
+      background-color: #EEF1F4;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .histogram-fill {
+      height: 100%;
+      background-color: var(--yellow);
+      min-width: 2px;
+    }
+
+    .rating-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      gap: 12px;
+    }
+
+    @media (max-width: 600px) {
+      .rating-box {
+        flex-direction: column;
+      }
+    }
+
+    .big-rating {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 64px;
+      color: var(--navy);
+      line-height: 1;
+    }
+
+    .rating-count {
+      font-size: 14px;
+      color: var(--ink);
+    }
+
+    .trust-text {
+      margin-top: 24px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--ink);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Visit */
+    .visit {
+      padding: 60px 20px;
+      background-color: var(--bg);
+    }
+
+    .visit-container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .visit h2 {
+      color: var(--navy);
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .visit-card {
+      background-color: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 40px;
+    }
+
+    .visit-item {
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    .visit-item.address {
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .visit-item.hours {
+      color: var(--ink);
+    }
+
+    .visit-item.phone a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    .visit-item.phone a:hover {
+      text-decoration: underline;
+    }
+
+    .visit-item.phone a:focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 2px;
+    }
+
+    .visit-buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .visit-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: var(--navy);
+      background-color: transparent;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .visit-btn {
+        transition: none;
+      }
+    }
+
+    .visit-btn:hover {
+      background-color: var(--bg);
+      border-color: var(--navy);
+    }
+
+    .visit-btn:focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 2px;
+    }
+
+    /* Final CTA */
+    .final-cta {
+      background-color: var(--navy);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      color: white;
+    }
+
+    .final-cta-text {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 32px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--bg);
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--ink);
+      opacity: 0.7;
+    }
+
+    /* Sticky Mobile Bar */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      background-color: white;
+      border-top: 1px solid var(--line);
+      z-index: 1000;
+      padding-bottom: max(0px, env(safe-area-inset-bottom));
+    }
+
+    @media (min-width: 720px) {
+      .sticky-bar {
+        display: none;
+      }
+    }
+
+    .sticky-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      height: 56px;
+      border: none;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      cursor: pointer;
+      color: white;
+      border-radius: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sticky-btn {
+        transition: none;
+      }
+    }
+
+    .sticky-btn:active {
+      opacity: 0.9;
+    }
+
+    .sticky-btn:focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: -2px;
+    }
+
+    .sticky-call {
+      background-color: var(--navy);
+    }
+
+    .sticky-wa {
+      background-color: var(--wa);
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="eyebrow">Carrum Downs · Car Repair Shop</div>
+      <h1>VS Auto Repairs</h1>
+      <div class="stars">
+        <span class="star-glyph" aria-hidden="true">★★★★★</span>
+        <span aria-hidden="true">4.8 · 47 Google reviews</span>
+        <span class="sr-only">4.8 out of 5 stars from 47 Google reviews</span>
+      </div>
+      <p class="hero-subhead">Brakes, transmission, engine and log book servicing — straight answers and quality workmanship.</p>
+      <div class="buttons">
+        <a id="cta-call-hero" class="btn btn-call" href="tel:+61397066007">
+          <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          Call (03) 9706 6007
+        </a>
+        <a id="cta-wa-hero" class="btn btn-wa" href="https://wa.me/61397066007?text=Hi%20VS%20Auto%2C%20I%27d%20like%20to%20book%20my%20car%20in" target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+          </svg>
+          WhatsApp — Book now
+        </a>
+      </div>
+      <div class="hero-bottom-line">Open weekdays · Closes 5pm · Replies fast on WhatsApp</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="services">
+      <div class="services-container">
+        <h2>What we fix</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Brakes</h3>
+            <p>Pads, discs, and bleeding. Safety first, always.</p>
+          </div>
+          <div class="service-card">
+            <h3>Transmission</h3>
+            <p>Gearbox repairs and fluid service. Smooth shifts.</p>
+          </div>
+          <div class="service-card">
+            <h3>Engine Repair</h3>
+            <p>Diagnostics and major work. We get it running.</p>
+          </div>
+          <div class="service-card">
+            <h3>General Repairs</h3>
+            <p>Everything from belts to lights to suspension.</p>
+          </div>
+          <div class="service-card">
+            <h3>Engine Tuning</h3>
+            <p>ECU mapping and performance. Tested and tuned.</p>
+          </div>
+          <div class="service-card">
+            <h3>Log Book Servicing</h3>
+            <p>Scheduled maintenance by the book. Warranty safe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="trust-container">
+        <h2>Rated 4.8 on Google</h2>
+        <div class="trust-card">
+          <div class="histogram">
+            <div class="histogram-row">
+              <div class="histogram-label">5</div>
+              <div class="histogram-track"><div class="histogram-fill" style="width: 92%;"></div></div>
+            </div>
+            <div class="histogram-row">
+              <div class="histogram-label">4</div>
+              <div class="histogram-track"><div class="histogram-fill" style="width: 6%;"></div></div>
+            </div>
+            <div class="histogram-row">
+              <div class="histogram-label">3</div>
+              <div class="histogram-track"><div class="histogram-fill" style="width: 0%;"></div></div>
+            </div>
+            <div class="histogram-row">
+              <div class="histogram-label">2</div>
+              <div class="histogram-track"><div class="histogram-fill" style="width: 1.5%;"></div></div>
+            </div>
+            <div class="histogram-row">
+              <div class="histogram-label">1</div>
+              <div class="histogram-track"><div class="histogram-fill" style="width: 1.5%;"></div></div>
+            </div>
+          </div>
+          <div class="rating-box">
+            <div class="big-rating">4.8</div>
+            <div class="stars">
+              <span class="star-glyph" aria-hidden="true">★★★★★</span>
+              <span class="sr-only">4.8 out of 5 stars</span>
+            </div>
+            <div class="rating-count">(47)</div>
+          </div>
+        </div>
+        <p class="trust-text">Locals rate us on honesty, turnaround and price. Read the reviews before you call — we're happy to be compared.</p>
+      </div>
+    </section>
+
+    <section class="visit">
+      <div class="visit-container">
+        <h2>Find the workshop</h2>
+        <div class="visit-card">
+          <div class="visit-item address">2/114 Colemans Rd, Carrum Downs VIC 3201</div>
+          <div class="visit-item hours">Open weekdays · Closes 5pm</div>
+          <div class="visit-item phone"><a id="cta-call-visit" class="track-call" href="tel:+61397066007">(03) 9706 6007</a></div>
+          <div class="visit-buttons">
+            <a id="cta-directions" class="visit-btn" href="https://maps.google.com/?q=VS+Auto+Repairs,+2/114+Colemans+Rd,+Carrum+Downs+VIC+3201" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container">
+        <h2>Book your car in today</h2>
+        <p class="final-cta-text">Message us on WhatsApp with your rego and what's wrong — we'll come back with a time and a straight answer.</p>
+        <div class="buttons">
+          <a id="cta-call-footer" class="btn btn-call" href="tel:+61397066007">
+            <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            Call (03) 9706 6007
+          </a>
+          <a id="cta-wa-footer" class="btn btn-wa" href="https://wa.me/61397066007?text=Hi%20VS%20Auto%2C%20I%27d%20like%20to%20book%20my%20car%20in" target="_blank" rel="noopener">
+            <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+            </svg>
+            WhatsApp — Book now
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    VS Auto Repairs · 2/114 Colemans Rd, Carrum Downs VIC 3201 · (03) 9706 6007
+  </footer>
+
+  <div class="sticky-bar">
+    <a id="cta-call-sticky" class="sticky-btn sticky-call" href="tel:+61397066007">
+      <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+      Call
+    </a>
+    <a id="cta-wa-sticky" class="sticky-btn sticky-wa" href="https://wa.me/61397066007?text=Hi%20VS%20Auto%2C%20I%27d%20like%20to%20book%20my%20car%20in" target="_blank" rel="noopener">
+      <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+      </svg>
+      WhatsApp
+    </a>
+  </div>
+
+  <script>
+        (function() {
+            'use strict';
+
+            const ADS_ID = 'AW-XXXXXXXXXX';
+            const LABELS = {
+                call: 'CALL_LABEL_HERE',
+                whatsapp: 'WA_LABEL_HERE'
+            };
+
+            /**
+             * reportConversion: Fire a Google Ads conversion event and navigate (if needed)
+             * @param {string} kind - 'call' or 'whatsapp'
+             * @param {string} url - URL to navigate to (for tel: links)
+             * @param {boolean} openInNewTab - If true, don't preventDefault; let browser handle target=_blank
+             * @param {string} elementId - The id attribute of the clicked link (for tracking)
+             */
+            function reportConversion(kind, url, openInNewTab, elementId) {
+                // If gtag is not loaded (blocked by adblock, etc.), allow navigation immediately
+                if (typeof window.gtag === 'undefined') {
+                    return true; // Allow default link behavior
+                }
+
+                let navigated = false;
+
+                // Fire the Google Ads conversion event
+                gtag('event', 'conversion', {
+                    'send_to': ADS_ID + '/' + LABELS[kind],
+                    'event_callback': function() {
+                        if (!navigated) {
+                            navigated = true;
+                            if (!openInNewTab) {
+                                window.location = url;
+                            }
+                        }
+                    }
+                });
+
+                // Fire a parallel analytics event (for GA4, if configured)
+                const eventName = kind === 'call' ? 'phone_call_click' : 'whatsapp_click';
+                gtag('event', eventName, {
+                    'event_category': 'engagement',
+                    'event_label': elementId || 'unknown'
+                });
+
+                // Fallback: if the callback doesn't fire in 400ms (network blocked, etc.), navigate anyway
+                if (!openInNewTab) {
+                    setTimeout(function() {
+                        if (!navigated) {
+                            navigated = true;
+                            window.location = url;
+                        }
+                    }, 400);
+                }
+
+                // For tel: links (openInNewTab=false), prevent default and let our callback handle it
+                // For wa.me links (openInNewTab=true), return true to allow browser to open target=_blank
+                return openInNewTab;
+            }
+
+            // Wire up event listeners with delegation
+            try {
+                document.addEventListener('click', function(event) {
+                    try {
+                        const el = event.target.closest('a');
+                        if (!el) return;
+
+                        const href = el.getAttribute('href') || '';
+                        const elementId = el.id || 'unknown';
+
+                        // Phone call links (tel:)
+                        if (href.startsWith('tel:')) {
+                            // Check if gtag exists BEFORE preventing default
+                            if (typeof window.gtag !== 'function') {
+                                // gtag is blocked; let browser handle the tel: link natively
+                                return;
+                            }
+                            event.preventDefault();
+                            reportConversion('call', href, false, elementId);
+                            return false;
+                        }
+
+                        // WhatsApp links (wa.me)
+                        if (href.includes('wa.me')) {
+                            // Don't preventDefault; just fire the event
+                            // The link has target=_blank, so browser handles the navigation
+                            reportConversion('whatsapp', href, true, elementId);
+                            return true;
+                        }
+                    } catch (error) {
+                        // If handler breaks (e.g., after preventDefault on tel: link), recover by navigating
+                        console.error('Click handler error:', error);
+                        const el = event.target.closest('a');
+                        const href = el && el.getAttribute('href');
+                        if (href && href.startsWith('tel:') && event.defaultPrevented) {
+                            window.location = href;
+                        }
+                    }
+                });
+            } catch (error) {
+                // If event listener registration fails, log it and let links work normally
+                console.error('Conversion tracking registration error:', error);
+            }
+        })();
+    </script>
+</body>
+</html>

@@ -100,3 +100,19 @@ test events deliver fine, 200). Square event logging enabled for diagnostics. Te
 
 **Open decisions**: multi-vehicle model (profile-per-vehicle vs Supabase registry);
 invoice template Dashboard paste-in (docs/square-invoice-template.md); PlateAPI plan tier.
+
+## Addendum 3: drop-off booking model (2026-08-22)
+
+Workshop runs daily intake, not timed appointments: cars dropped 8:30–10am, picked up from 4pm.
+All 8 bookable services changed to 30-min "drop-off slot" duration with the drop-off/pickup line
+appended to descriptions. Daily capacity = drop-off window ÷ 30 min × bookable staff calendars.
+Team members created: Mechanic Two (TMfFKYYnDfwkNKuF), Mechanic Three (TM_ThaIxLFaFe1P-) —
+rename in Dashboard. Recommended: 2 calendars bookable online (≈6 booked cars/day incl. owner's),
+third mechanic kept off-calendar as slack for walk-ins/overruns.
+
+Owner Dashboard steps for Appointments:
+1. Appointments → Online booking: enable
+2. Staff: rename Mechanic Two/Three; set bookable hours 8:30–10:00 Mon–Fri (8:30–10:00 Sat)
+   on exactly TWO staff; leave the third not bookable
+3. Communications: booking confirmation message — "Drop your car off at 8:30–10am; pick up
+   from 4pm. We'll call if anything needs approving."

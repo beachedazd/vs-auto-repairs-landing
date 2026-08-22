@@ -83,8 +83,13 @@ async function handleCustomAttribute(event) {
 
 function findCustomerId(event) {
   const d = event?.data || {};
+  // data.id format: "<app_id>:<key>:CUSTOMER:<customer_id>" (verified via Square's test event)
+  if (typeof d.id === "string") {
+    const parts = d.id.split(":");
+    const i = parts.indexOf("CUSTOMER");
+    if (i >= 0 && parts[i + 1]) return parts[i + 1];
+  }
   const ca = d.object?.custom_attribute || {};
-  // try the obvious spots first, then any ID-shaped string in data.id
   for (const cand of [ca.customer_id, d.object?.customer_id, d.id]) {
     if (typeof cand === "string") {
       const m = cand.match(/[A-Z0-9]{16,}/); // Square customer ids are long uppercase alnum

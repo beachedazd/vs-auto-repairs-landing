@@ -78,3 +78,25 @@ integration exists. Paid NEVDIS APIs (Blue Flag, MotorWeb, AutoGrab) noted as a 
 ## Landing page follow-up (separate task)
 
 Site says "Open weekdays" only — add Saturday 8:30–12 to visible text and schema markup.
+
+## Addendum 2: categories, appointments, webhook infra (2026-08-22, later same day)
+
+**Categories** (also set as reporting categories): Inspections & Certificates / Servicing /
+Repairs / Parts & Labour. Air-Con Regas was found deleted (not by us) and recreated
+(id 6JAHPMS4IIXI5DFOGMIOYDXY).
+
+**Appointments**: 7 services converted to APPOINTMENTS_SERVICE with durations (RWC 1h,
+re-inspection 30m, pre-purchase 1.5h, minor 1.5h, logbook 3h, major 4h, air-con 1h) plus new
+"Diagnostic / Workshop Visit" (1h, variable) for quoted repairs. Online booking still OFF —
+owner enables in Dashboard. One team member (owner, no name set). Capacity = 1 booking at a
+time until more team members are added.
+
+**Rego→vehicle webhook**: Netlify function live at /hooks/square (signature-verified),
+subscription wbhk_c9b6e78317ea4852aae29cb8b34c25da on customer.custom_attribute.owned.updated.
+Custom attribute definitions re-owned by the owner's "VS Auto Intake" app
+(sq0idp-0HYeE2z0xMOrEmi-2wp61w). UNRESOLVED: real events not yet observed arriving (Square
+test events deliver fine, 200). Square event logging enabled for diagnostics. Test customer
+"TEST DELETE ME" (2WBQ645R9WS5GX5DM7H1DWSBDG) still in directory.
+
+**Open decisions**: multi-vehicle model (profile-per-vehicle vs Supabase registry);
+invoice template Dashboard paste-in (docs/square-invoice-template.md); PlateAPI plan tier.

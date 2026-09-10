@@ -41,3 +41,7 @@ truck service) and recompressed for the web.
 
 Hosted on Netlify. Any push to `main` redeploys. To test locally just open `index.html`
 in a browser.
+
+## Self-hosted backend
+
+Square webhook processing now runs on the VS Auto self-hosted Supabase project. See [backend deployment and verification](docs/self-hosted-supabase.md). The public landing page remains on Netlify.

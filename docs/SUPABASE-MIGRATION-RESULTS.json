@@ -1,0 +1,27 @@
+{
+  "at": "2026-09-10T00:50:09.278536+00:00",
+  "site": "https://vs-auto-repairs-carrum-downs.netlify.app",
+  "deployId": "6aa1fe73181c5d664713fdc3",
+  "supabaseProject": "b4cd9a880ca5",
+  "publicHtmlUnchanged": true,
+  "providerSecretsRemovedFromNetlify": true,
+  "webhookChecks": [
+    {
+      "status": 403,
+      "body": "Invalid signature",
+      "backend": "supabase"
+    },
+    {
+      "status": 200,
+      "body": "Processed by VS Auto Supabase",
+      "backend": "supabase"
+    },
+    {
+      "status": 200,
+      "body": "Already processed",
+      "backend": "supabase"
+    }
+  ],
+  "realCustomerRecordsChanged": false,
+  "realPlateLookupsPerformed": false
+}

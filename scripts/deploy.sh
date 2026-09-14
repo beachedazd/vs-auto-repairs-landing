@@ -8,7 +8,7 @@ cd "$(dirname "$0")/.."
 STAGE="$(mktemp -d)"
 trap 'rm -rf "$STAGE"' EXIT
 
-cp index.html netlify.toml "$STAGE/"
+cp index.html pre-purchase-inspection.html netlify.toml "$STAGE/"
 cp -R assets "$STAGE/assets"
 
 npx --yes netlify-cli@latest deploy --prod \

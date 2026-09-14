@@ -6,7 +6,8 @@ conversion tracking wired in.
 
 ## What's here
 
-- `index.html` — the whole site. No build step, no dependencies.
+- `index.html` — the home page (roadworthy + general servicing). No build step, no dependencies.
+- `pre-purchase-inspection.html` — Google Ads landing page for pre-purchase inspection searches. Same tracking wiring; CTA ids end in `-ppi`.
 - `netlify.toml` — Netlify config (static deploy, security headers).
 
 ## Before going live: conversion tracking setup
